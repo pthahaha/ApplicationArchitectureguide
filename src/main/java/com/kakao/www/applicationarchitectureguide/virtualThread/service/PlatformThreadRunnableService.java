@@ -1,4 +1,4 @@
-package com.kakao.www.applicationarchitectureguide.service;
+package com.kakao.www.applicationarchitectureguide.virtualThread.service;
 
 import org.springframework.stereotype.Service;
 

@@ -1,8 +1,7 @@
-package com.kakao.www.applicationarchitectureguide.controller;
+package com.kakao.www.applicationarchitectureguide.virtualThread.controller;
 
-import com.kakao.www.applicationarchitectureguide.service.PlatformThreadCallableService;
-import com.kakao.www.applicationarchitectureguide.service.PlatformThreadRunnableService;
-import com.kakao.www.applicationarchitectureguide.service.VirtualThreadService;
+import com.kakao.www.applicationarchitectureguide.virtualThread.service.PlatformThreadCallableService;
+import com.kakao.www.applicationarchitectureguide.virtualThread.service.PlatformThreadRunnableService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -20,9 +19,6 @@ public class ThreadController {
 
     @Autowired
     PlatformThreadCallableService ptCallableServlce;
-
-    @Autowired
-    VirtualThreadService vtService;
 
     @GetMapping("/hello")
     public String hello(){
@@ -62,6 +58,7 @@ public class ThreadController {
         pt1.start();
         System.out.println("Thread t2 name: " + pt2.getName());
         pt2.start();
+
     }
 
     @GetMapping("/callable")
