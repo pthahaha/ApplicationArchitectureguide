@@ -22,6 +22,7 @@ public class ThreadController {
 
     @GetMapping("/hello")
     public String hello(){
+        System.out.println(Thread.currentThread().getName());
         return "helloWorld";
     }
 
