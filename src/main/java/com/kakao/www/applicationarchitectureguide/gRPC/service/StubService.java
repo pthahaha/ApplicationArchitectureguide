@@ -23,7 +23,7 @@ public class StubService {
                         .setName("Samsung S10")
                         .setDescription("Samsung Galaxy S50 is the latest smart phone, " +
                                 "launched in February 2050")
-                        .setPrice(700.0f)
+                        .setPrice(70000)
                         .build());
         logger.info("Product ID: " + productID.getValue() + " added successfully.");
 
